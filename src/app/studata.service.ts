@@ -12,7 +12,7 @@ export class StudataService {
 
   getStudents(): Observable<Student[]>{
     //return of(Students);
-    return this.client.get<Student[]>("http://localhost/users.json");
+    return this.client.get<Student[]>("http://192.168.1.106/users.json");
   }
 
   getStudent(sno:string):Observable<Student|undefined>{
