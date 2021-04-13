@@ -1,0 +1,11 @@
+<h1 class="hello">Select your profile.</h1>
+<ol>
+  <div *ngIf="students.length > 0;else Warn">
+    <li *ngFor="let stu of students">
+      <a routerLink="/show/{{stu.sno}}">{{stu.name}}</a>
+    </li>
+  </div>
+  <ng-template #Warn>
+    <h2 style="color: red">No profiles!</h2>
+  </ng-template>
+</ol>

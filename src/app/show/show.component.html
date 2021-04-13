@@ -1,1 +1,41 @@
-<p>show works!</p>
+<div id="show">
+  <img id="intro" src="assets/nav.png" style="width: 100%; transform: scale(1.08) translateY(-5px);" alt="">
+  <div id="box">
+    <div id="wrapper">
+      <!--动态防伪条?-->
+      <div id="bar">
+        <img src="assets/superbar.png" alt="">
+        <div id="bar_content">
+          <span>动态防伪条</span>
+        </div>
+      </div>
+      <div id="time">
+        <div style="display: inline">
+          当前时间：<span>{{now | date: "yyyy-M-d HH:mm:ss"}}</span>
+        </div>
+        <img src="assets/time.png" alt="">
+      </div>
+      <div class="bandle">
+        <div id="success">
+          <img src="assets/success.png" alt="">
+          <span>签到成功</span>
+        </div>
+      </div>
+      <div id="info">
+        <div *ngIf="student">
+          <ul>
+            <li>姓名：<span>{{student.name}}</span></li>
+            <li>学号：<span>{{student.sno}}</span></li>
+            <li>性别：<span>男</span></li>
+            <li>年级：<span>2018</span></li>
+            <li>学院：<span>计算机工程学院</span></li>
+            <li>专业：<span>计算机科学与技术</span></li>
+            <li>班级：<span>1812</span></li>
+            <li>宿舍：<span>-</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button routerLink="/">返回APP首页</button>
+  </div>
+</div>

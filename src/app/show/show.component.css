@@ -1,0 +1,113 @@
+#show {
+	color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+#intro {
+  margin-top: -1px;
+}
+
+#box {
+  margin-top: 40vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wrapper {
+  background: repeating-linear-gradient(45deg, #2689fa, #47abfe);
+  width: 80vw;
+  border-radius: 8px;
+}
+
+#bar {
+  overflow: hidden;
+  text-align: center;
+  height: 6vw;
+  border-radius: 8px;
+}
+
+#bar_content {
+	background: rgba(149, 149, 149, 0.65);
+	border-radius: 32px;
+	font-size: 0.7rem;
+	padding: 0.2rem 0.5rem 0 0.5rem;
+	display: inline;
+	position: relative;
+	z-index: 9;
+	top: -27px;
+	width: 48px;
+}
+
+/*超长图片！*/
+#bar img {
+  height: 5vw;
+  position: relative;
+  right: 10%;
+  z-index: 9;
+  top: -5px;
+  border-radius: 16px;
+  animation:12s linear 1s infinite running load;
+}
+
+@keyframes load {
+  from {right: 220%;}
+  to {right: 5%;}
+}
+
+#bar span {
+  z-index: 99;
+}
+
+ul {
+  padding-left: 8vw;
+  font-weight: bold;
+}
+
+#time {
+  text-align: right;
+}
+
+#time img {
+  margin-right: 2vw;
+  padding-left: 10vw;
+  height: 6vw;
+}
+
+.bandle {
+  text-align: center;
+}
+
+#success {
+  display: inline-block;
+  margin: 2vw 0;
+}
+
+#success img {
+  vertical-align: middle;
+  height: 6vw;
+}
+
+#success span {
+  font-weight: lighter;
+  vertical-align: bottom;
+}
+
+#status {
+  text-align: center;
+  font-weight: lighter;
+}
+
+button {
+  width: 104px;
+  height: 28px;
+  margin-top: 8px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+}
