@@ -1,21 +1,16 @@
 import {HttpClient} from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs';
+import {Injectable} from '@angular/core';
+import {Observable} from 'rxjs';
 import {Student} from './Student'
-import {Students} from './Students';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class StudataService {
-  constructor(private client:HttpClient) { }
+    userListUrl: string = "assets/users.json";
+    constructor(private client: HttpClient) {}
 
-  getStudents(): Observable<Student[]>{
-    //return of(Students);
-    return this.client.get<Student[]>("http://192.168.1.106/users.json");
-  }
-
-  getStudent(sno:string):Observable<Student|undefined>{
-    return of(Students.find(stu => stu.sno === sno));
-  }
+    getStudents(): Observable<Student[]> {
+        return this.client.get<Student[]>(this.userListUrl);
+    }
 }

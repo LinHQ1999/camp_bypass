@@ -2,13 +2,13 @@
 <ol>
   <div *ngIf="students.length > 0;else Warn">
     <li *ngFor="let stu of students">
-      <a routerLink="/show/{{stu.sno}}">{{stu.name}}</a>
+      <a routerLink="/show/{{stu.sno}}">{{stu.name}}: {{stu.sno}}</a>
     </li>
   </div>
   <ng-template #Warn>
     <h2 style="color: red">No profiles!</h2>
     <ul>
-      <li>检查<a href="http://192.168.1.106/users.json">users.json</a>是否可被访问。</li>
+      <li>请检查 <a href="assets/users.json">users.json</a> 是否可被访问。</li>
     </ul>
   </ng-template>
 </ol>

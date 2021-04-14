@@ -1,5 +1,7 @@
-<div id="show">
-  <img id="intro" src="assets/nav.png" style="width: 100%; transform: scale(1.08) translateY(-5px);" alt="">
+<div id="show" *ngIf="student;else Error">
+  <div *ngIf="!student.simple">
+    <img id="intro" src="assets/nav.png" style="width: 100%; transform: scale(1.08) translateY(-5px);" alt="">
+  </div>
   <div id="box">
     <div id="wrapper">
       <!--动态防伪条?-->
@@ -22,20 +24,22 @@
         </div>
       </div>
       <div id="info">
-        <div *ngIf="student">
-          <ul>
-            <li>姓名：<span>{{student.name}}</span></li>
-            <li>学号：<span>{{student.sno}}</span></li>
-            <li>性别：<span>男</span></li>
-            <li>年级：<span>2018</span></li>
-            <li>学院：<span>计算机工程学院</span></li>
-            <li>专业：<span>计算机科学与技术</span></li>
-            <li>班级：<span>1812</span></li>
-            <li>宿舍：<span>-</span></li>
-          </ul>
-        </div>
+        <ul>
+          <li>姓名：<span>{{student.name}}</span></li>
+          <li>学号：<span>{{student.sno}}</span></li>
+          <li>性别：<span>男</span></li>
+          <li>年级：<span>2018</span></li>
+          <li>学院：<span>计算机工程学院</span></li>
+          <li>专业：<span>计算机科学与技术</span></li>
+          <li>班级：<span>1812</span></li>
+          <li>宿舍：<span>-</span></li>
+        </ul>
       </div>
     </div>
     <button routerLink="/">返回APP首页</button>
   </div>
 </div>
+<ng-template #Error>
+  <h5 style="color: red;text-align: center;">数据拉取失败！</h5>
+  <a routerLink="/customizer">点此回到主页面</a>
+</ng-template>

@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  color: tomato;
+}
+
+ol {
+  border-radius: 8px;
+  border:2px white solid;
+  background-color: azure;
+}
+
+ol li {
+  margin: 2vh 2vw;
+  padding-left: 1vw;
+  border-bottom: 1px solid gray;
+}
+
+a:hover {
+  color: white;
+}

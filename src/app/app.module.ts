@@ -5,8 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ShowComponent } from './show/show.component';
 import { CustomizerComponent } from './customizer/customizer.component';
+import {LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {ShowComponent} from './show/show.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { CustomizerComponent } from './customizer/customizer.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+      {provide: LocationStrategy, useClass: PathLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,6 +8,7 @@
 #intro {
   position: fixed;
   margin-top: -1px;
+  left: 3vw;
 }
 
 #box {
