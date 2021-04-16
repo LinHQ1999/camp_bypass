@@ -1,7 +1,7 @@
 #wrapper {
   height: 100vh;
   width: 100vw;
-  background-color: white;
+  background: #efefef;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -73,7 +73,8 @@ header>img {
 }
 
 #bar {
-  overflow-x: hidden;
+  overflow: hidden;
+  height:1.2rem;
 }
 
 #bar img{
@@ -91,7 +92,7 @@ header>img {
   position: absolute;
   top: 25.3vh;
   left: 20vw;
-  padding: 0 0.1em;
+  padding: 0 0.3em;
 }
 
 .subscribe {
@@ -99,10 +100,22 @@ header>img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-left: 5vw;
 }
 
 .item {
   display: flex;
+}
+
+.item span {
+  flex-grow: 1;
+}
+
+.delim {
+  min-width: 1.1rem;
+  color: #929292;
+  font-size: 0.9rem;
+  padding: 0.3em 0 0.3em 0.8em;
 }
 
 .ico {

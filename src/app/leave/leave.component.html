@@ -26,8 +26,19 @@
   </div>
   <div class="subscribe">
     <div class="item">
-      <span class="k">请假类型</span>
-      <span class="v">事假</span>
+      <span class="k">请假类型: <span class="v">事假</span></span>
+      <span class="k">需要离校: <span class="v">离校</span></span>
     </div>
+    <div class="item">
+      <span class="k">销假规则: <span style="color: #dece81;">离校请假需要销假，非离校请假无需销假</span></span>
+    </div>
+    <div class="item">
+      <span class="k">实际休假时间:
+        <span class="v">{{startDate|date:"M-dd HH:mm"}} ~ {{endDate|date:"M-dd HH:mm"}}（共 3 天）</span>
+      </span>
+    </div>
+  </div>
+  <div class="delim">
+    请假详情
   </div>
 </div>
