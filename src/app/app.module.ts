@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { CustomizerComponent } from './customizer/customizer.component';
 import {LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {ShowComponent} from './show/show.component';
+import { LeaveComponent } from './leave/leave.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowComponent,
-    CustomizerComponent
+    CustomizerComponent,
+    LeaveComponent
   ],
   imports: [
     BrowserModule,

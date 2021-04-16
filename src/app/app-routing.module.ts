@@ -1,9 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {CustomizerComponent} from './customizer/customizer.component';
+import {LeaveComponent} from './leave/leave.component';
 import {ShowComponent} from './show/show.component';
 
 const routes: Routes = [
+{
+    path: "",
+    redirectTo: "/customizer", pathMatch: 'full'
+  },
   {
     path: "show/:sno",
     component: ShowComponent
@@ -13,8 +18,8 @@ const routes: Routes = [
     component: CustomizerComponent
   },
   {
-    path: "",
-    redirectTo: "/customizer", pathMatch: 'full'
+    path: "leave/:sno",
+    component: LeaveComponent
   }
 ];
 
