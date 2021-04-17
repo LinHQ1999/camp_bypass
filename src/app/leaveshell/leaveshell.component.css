@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  background: #FDFDFD;
+}
+
+header>img {
+  padding-left: 5vw;
+  height: 1.5rem;
+}
+
+#title .ico {
+  width: 1.5rem;
+  vertical-align: top;
+}
+
+#title .k {
+  font-size: 1.3rem;
+}
+
+.outlink {
+  font-size: .9rem;
+  color: rgb(0, 247, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FDFDFD;
+    min-height: 7vh;
+    border-top: 2px #D7D7D7 solid ;
+    color: black;
+}
+
+nav button {
+    margin: 0;
+    width: 30vw;
+    font-size: 1rem;
+    text-align: center;
+    background: #FDFDFD;
+    border: 0;
+}
+
+nav .act {
+    color: #3899F5;
+    border: 0;
+    border-bottom: 3px solid #3899F5;
+}
+
+article {
+  overflow: scroll;
+}

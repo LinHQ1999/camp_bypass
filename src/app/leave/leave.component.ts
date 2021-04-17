@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {StudataService} from '../studata.service';
-import {Student} from '../Student';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { StudataService } from '../studata.service';
+import { Student } from '../Student';
 
 @Component({
   selector: 'app-leave',
@@ -17,8 +17,10 @@ export class LeaveComponent implements OnInit {
 
   leaveReason: string | undefined;
 
-  constructor(private studata: StudataService,
-    private route: ActivatedRoute) {}
+constructor(
+    private studata:StudataService,
+    private route:ActivatedRoute
+    ) { }
 
   ngOnInit(): void {
     this.getStudents();
@@ -31,6 +33,13 @@ export class LeaveComponent implements OnInit {
     setInterval(() => this.currentDate = new Date(), 1000);
   }
 
+  getStudents(): void {
+    const sno: string | null = this.route.snapshot.paramMap.get("sno");
+    this.studata.getStudents()
+      .subscribe(stus =>
+        this.student = stus.find(stu => stu.sno === sno));
+  }
+
   getReason(): void {
     if (this.student?.reasons !== undefined) {
       const randIndex = Math.floor(Math.random() * this.student?.reasons.length)
@@ -38,13 +47,6 @@ export class LeaveComponent implements OnInit {
     } else {
       this.leaveReason = "去市区买东西，需要暂时离校";
     }
-  }
-
-  getStudents(): void {
-    const sno: string | null = this.route.snapshot.paramMap.get("sno");
-    this.studata.getStudents()
-      .subscribe(stus =>
-        this.student = stus.find(stu => stu.sno === sno));
   }
 }
 

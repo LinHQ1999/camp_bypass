@@ -9,13 +9,17 @@ import { CustomizerComponent } from './customizer/customizer.component';
 import {LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {ShowComponent} from './show/show.component';
 import { LeaveComponent } from './leave/leave.component';
+import { LeaveshellComponent } from './leaveshell/leaveshell.component';
+import { QrcodeComponent } from './qrcode/qrcode.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowComponent,
     CustomizerComponent,
-    LeaveComponent
+    LeaveComponent,
+    LeaveshellComponent,
+    QrcodeComponent
   ],
   imports: [
     BrowserModule,
