@@ -1,4 +1,6 @@
 #wrapper {
+  /* 撑起上部，否则会被遮盖 */
+  margin-top: 13.3vh;
   height: 100vh;
   width: 100vw;
   background: #efefef;
@@ -65,6 +67,7 @@
 #bar {
   overflow: hidden;
   min-height: 1.1rem;
+  margin-bottom: -4px;
 }
 
 #bar img {
@@ -90,13 +93,12 @@
   text-align: center;
   font-size: 0.9rem;
   border-radius: 8px;
-  top: 30vh;
+  top: 29.8vh;
   left: 22.5vw;
   padding: 0 .3em .3em .3em;
 }
 
 #info {
-  border: -1px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: 'a b';

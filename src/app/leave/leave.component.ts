@@ -26,8 +26,11 @@ constructor(
     this.getStudents();
     this.getReason();
 
-    // 计算截止日期，自动以 3 天计。
-    this.endDate.setDate(this.startDate.getDate() + 3);
+    // 计算截止日期，自动以 1 天计。
+    // 起始时间进行混淆。
+    this.startDate.setDate(this.currentDate.getDate() - 1);
+    this.startDate.setHours(this.currentDate.getHours() - 7);
+    this.endDate.setDate(this.startDate.getDate() + 1);
 
     // 实时更新日期
     setInterval(() => this.currentDate = new Date(), 1000);
