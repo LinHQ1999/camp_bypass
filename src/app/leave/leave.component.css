@@ -69,6 +69,12 @@
 
 #bar img {
   height: 1.1rem;
+  animation: 12s linear 1s infinite running loading ;
+}
+
+@keyframes loading {
+  from {transform: translateX(-160vw);}
+  to {transform: translateX(0);}
 }
 
 /*进度条上的文字*/
@@ -84,12 +90,13 @@
   text-align: center;
   font-size: 0.9rem;
   border-radius: 8px;
-  top: 32.1vh;
+  top: 30vh;
   left: 22.5vw;
   padding: 0 .3em .3em .3em;
 }
 
 #info {
+  border: -1px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: 'a b';
@@ -167,8 +174,9 @@
   color: #A7AAB2;
   border-radius: 4px;
   border: 1px solid #DADEE1;
-  padding: 0.8em;
+  padding: 0.4em;
   width: 70vw;
+  height: 1.5rem;
   align-self: center;
   justify-self: start;
 }

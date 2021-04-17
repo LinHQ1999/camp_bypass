@@ -12,7 +12,7 @@ export class LeaveComponent implements OnInit {
   student: Student | undefined;
 
   startDate: Date = new Date();
-  endDate: Date | undefined;
+  endDate: Date = new Date();
   currentDate: Date = new Date();
 
   leaveReason: string | undefined;
@@ -27,7 +27,7 @@ constructor(
     this.getReason();
 
     // 计算截止日期，自动以 3 天计。
-    this.startDate.setDate(this.startDate.getDate() + 3);
+    this.endDate.setDate(this.startDate.getDate() + 3);
 
     // 实时更新日期
     setInterval(() => this.currentDate = new Date(), 1000);

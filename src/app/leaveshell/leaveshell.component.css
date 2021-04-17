@@ -1,6 +1,6 @@
 header {
   display: flex;
-  height: 8vh;
+  height: 7vh;
   justify-content: space-between;
   align-items: center;
   background: #FDFDFD;
@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: #FDFDFD;
-    min-height: 7vh;
+    min-height: 6vh;
     border-top: 2px #D7D7D7 solid ;
     color: black;
 }
@@ -51,4 +51,21 @@ nav .act {
 
 article {
   overflow: scroll;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  height: 7vh;
+}
+
+footer button {
+  flex-grow: 1;
+  background: white;
+  font-size: 1.3rem;
+  color: #687178;
+  margin: 0;
+  border: 0.5px #DCE0E3 solid;
 }
