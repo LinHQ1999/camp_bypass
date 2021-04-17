@@ -31,15 +31,15 @@ header>img {
 #question {
   background: #a5bad7;
   max-height: 2.5vh;
-  font-size: 0.6rem;
+  font-size: .6rem;
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
 #question .ico {
-  height: 0.6rem;
-  margin-bottom: 0.5vh;
+  height: .6rem;
+  margin-bottom: .5vh;
 }
 
 #status {
@@ -60,7 +60,7 @@ header>img {
 
 #status span {
   color: white;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
 }
 
 #status p {
@@ -69,7 +69,7 @@ header>img {
   margin: 0;
   color: white;
   font-weight: lighter;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
 }
 
 #bar {
@@ -84,7 +84,7 @@ header>img {
 #bar div {
   color: white;
   background-color: #7f7f7d;
-  opacity: 0.7;
+  opacity: .7;
   max-width: 60vw;
   max-height: 1.3rem;
   text-align: center;
@@ -92,7 +92,35 @@ header>img {
   position: absolute;
   top: 25.3vh;
   left: 20vw;
-  padding: 0 0.3em;
+  padding: 0 .3em;
+}
+
+/*撑开右边，使右边对齐*/
+#info .k {
+  min-width: 30vw;
+}
+
+#info span {
+  display: inline-block;
+  color: #aecae6;
+  margin-left: .5em;
+}
+
+#mix {
+  display: grid;
+  max-height: 15vh;
+  max-width: 70vw;
+  margin-left: 4vw;
+  grid-template-rows: 1fr 1fr 1.5fr;
+  grid-template-columns: 2rem 5fr;
+  grid-template-areas: 'a b'
+                       'a c'
+                       '. d';
+}
+
+#mix img {
+  width: 1.5rem;
+  grid-area: a; 
 }
 
 .subscribe {
@@ -103,19 +131,27 @@ header>img {
   padding-left: 5vw;
 }
 
+.subscribe h3 {
+  padding: .5rem 0;
+  margin: 0;
+  font-weight: bold;
+}
+
 .item {
   display: flex;
+  align-items: baseline;
 }
 
 .item span {
   flex-grow: 1;
 }
 
+/*分割行*/
 .delim {
-  min-width: 1.1rem;
+  min-height: .8rem;
   color: #929292;
-  font-size: 0.9rem;
-  padding: 0.3em 0 0.3em 0.8em;
+  font-size: .9rem;
+  padding: .3em 0 .3em .8em;
 }
 
 .ico {
@@ -132,6 +168,6 @@ header>img {
 }
 
 .outlink {
-  font-size: 0.9rem;
+  font-size: .9rem;
   color: #12adc9;
 }

@@ -9,17 +9,20 @@ import {Student} from '../Student';
   styleUrls: ['./leave.component.css']
 })
 export class LeaveComponent implements OnInit {
-  students: Student | undefined;
+  student: Student | undefined;
 
-  startDate:Date = new Date();
-  endDate:Date | undefined;
-  currentDate:Date = new Date();
+  startDate: Date = new Date();
+  endDate: Date | undefined;
+  currentDate: Date = new Date();
+
+  leaveReason: string | undefined;
 
   constructor(private studata: StudataService,
-              private route: ActivatedRoute) {}
+    private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.getStudents();
+    this.getReason();
 
     // 计算截止日期，自动以 3 天计。
     this.startDate.setDate(this.startDate.getDate() + 3);
@@ -28,11 +31,20 @@ export class LeaveComponent implements OnInit {
     setInterval(() => this.currentDate = new Date(), 1000);
   }
 
+  getReason(): void {
+    if (this.student?.reasons !== undefined) {
+      const randIndex = Math.floor(Math.random() * this.student?.reasons.length)
+      this.leaveReason = this.student.reasons[randIndex];
+    } else {
+      this.leaveReason = "去市区买东西，需要暂时离校";
+    }
+  }
+
   getStudents(): void {
     const sno: string | null = this.route.snapshot.paramMap.get("sno");
     this.studata.getStudents()
       .subscribe(stus =>
-        this.students = stus.find(stu => stu.sno === sno));
+        this.student = stus.find(stu => stu.sno === sno));
   }
 }
 

@@ -1,6 +1,6 @@
-<div id="wrapper">
+<div id="wrapper" *ngIf="student">
   <header>
-    <img class="ico" src="assets/back.png" alt="">
+    <img routerLink="/" class="ico" src="assets/back.png" alt="">
     <div id="title">
       <img class="ico" src="assets/ok.png" alt="">
       <span class="k">请假详情</span>
@@ -40,5 +40,46 @@
   </div>
   <div class="delim">
     请假详情
+  </div>
+  <div id="info" class="subscribe">
+    <h3>我的&nbsp;请假申请</h3>
+    <div class="item">
+      <div class="k">开始时间：</div>
+      <div class="v">{{startDate|date:"M-dd HH:mm"}}</div>
+    </div>
+    <div class="item">
+      <div class="k">结束时间：</div>
+      <div class="v">{{endDate|date:"M-dd HH:mm"}}</div>
+    </div>
+    <div class="item">
+      <div class="k">审批流程：</div>
+      <div class="v">共1步<span>查看></span></div>
+    </div>
+    <div class="item">
+      <div class="k">紧急联系人：</div>
+      <div class="v">{{student.phone}}</div>
+    </div>
+    <div class="item">
+      <div class="k">请假原因：</div>
+      <div class="v">{{leaveReason}}</div>
+    </div>
+    <div class="item">
+      <div class="k">发起位置：</div>
+      <div class="v"><span style="margin-left: 0">湖北文理学院</span></div>
+    </div>
+    <div class="item">
+      <div class="k">抄送人：</div>
+      <div class="v">无</div>
+    </div>
+  </div>
+  <div class="delim"></div>
+  <div class="subscribe">
+    <h3>审批状态</h3>
+    <div id="mix">
+      <img src="assets/flow.png" alt="">
+      <p>{{student.name}} - 发起申请</p>
+      <p>一级：[辅导员]{{student.teacher}} - 审批通过</p>
+      <p>审批意见：无</p>
+    </div>
   </div>
 </div>
