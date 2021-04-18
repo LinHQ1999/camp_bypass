@@ -24,11 +24,11 @@
 }
 
 #status {
-  max-height: 12vh;
+  max-height: 10vh;
   background: linear-gradient(180deg, #04a856, #01dc6f);
   display: grid;
   grid-template-columns: 1fr 2.3fr 1fr;
-  grid-template-rows: 5vh 6vh;
+  grid-template-rows: 4vh 5vh;
   grid-template-areas: '. a b' '. c .';
   justify-items: center;
   padding: 1.5vh;
@@ -36,6 +36,7 @@
 
 #checked {
   grid-area: a;
+  align-self: flex-end;
 }
 
 #status img {
