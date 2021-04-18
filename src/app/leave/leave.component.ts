@@ -30,7 +30,7 @@ constructor(
     // 起始时间进行混淆。
     this.startDate.setDate(this.currentDate.getDate() - 1);
     this.startDate.setHours(this.currentDate.getHours() - 7);
-    this.endDate.setDate(this.startDate.getDate() + 1);
+    this.endDate.setDate(this.startDate.getDate() + 2);
 
     // 实时更新日期
     setInterval(() => this.currentDate = new Date(), 1000);
