@@ -45,3 +45,6 @@ statics/
 # System Files
 .DS_Store
 Thumbs.db
+
+**.7z
+**.zip
