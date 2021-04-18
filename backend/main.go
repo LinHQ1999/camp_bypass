@@ -15,6 +15,7 @@ var (
 func main() {
 	g := gin.Default()
 
+	/*ng build --base-href="/app/statics/"  --prod*/
 	g.StaticFS("/app", http.FS(res))
 
 	g.Any("/", func(c *gin.Context) {
