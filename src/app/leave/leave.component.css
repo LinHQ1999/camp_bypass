@@ -89,13 +89,13 @@
   z-index: 99;
   color: white;
   background-color: #7f7f7d;
-  opacity: .7;
+  opacity: .85;
   width: 50vw;
   height: 1rem;
   text-align: center;
   font-size: 0.9rem;
   border-radius: 8px;
-  top: 29.8vh;
+  top: 27.8vh;
   left: 22.5vw;
   padding: 0 .3em .3em .3em;
 }
@@ -224,11 +224,11 @@
 }
 
 .k {
-  color: #767676;
+  color: #A7ACB0;
   font-size: 0.8rem;
 }
 
 .v {
-  color: #010101;
+  color: #586369;
   font-size: 0.8rem;
 }

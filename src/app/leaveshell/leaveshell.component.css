@@ -39,7 +39,6 @@ nav {
   background-color: #FDFDFD;
   min-height: 6vh;
   border-top: 2px #D7D7D7 solid;
-  color: black;
 }
 
 nav button {
@@ -47,6 +46,7 @@ nav button {
   width: 30vw;
   font-size: 1rem;
   text-align: center;
+  color: #586369;
   background: #FDFDFD;
   border: 0;
 }
