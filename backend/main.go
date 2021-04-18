@@ -18,7 +18,8 @@ func main() {
 	/*ng build --base-href="/app/statics/"  --prod*/
 	g.StaticFS("/app", http.FS(res))
 
-	g.Any("/", func(c *gin.Context) {
+	// fallback
+	g.NoRoute(func(c *gin.Context) {
 		c.FileFromFS("statics/index.htm", http.FS(res))
 	})
 
@@ -26,10 +27,6 @@ func main() {
 		ctx.Header("Access-Control-Allow-Origin", "*")
 		ctx.Header("Content-Type", "application/json")
 		ctx.File("users.json")
-	})
-
-	g.NoRoute(func(c *gin.Context) {
-		c.FileFromFS("statics/index.htm", http.FS(res))
 	})
 
 	if err := g.Run(":9080"); err != nil {
