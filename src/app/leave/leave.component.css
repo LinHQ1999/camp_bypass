@@ -28,7 +28,7 @@
   background: linear-gradient(180deg, #04a856, #01dc6f);
   display: grid;
   grid-template-columns: 1fr 2.3fr 1fr;
-  grid-template-rows: 4vh 5vh;
+  grid-template-rows: 3vh 6vh;
   grid-template-areas: '. a b' '. c .';
   justify-items: center;
   padding: 1.5vh;
@@ -36,7 +36,6 @@
 
 #checked {
   grid-area: a;
-  align-self: flex-end;
 }
 
 #status img {
@@ -51,6 +50,7 @@
 
 #state {
   grid-area: c;
+  align-self: flex-start;
   font-size: 2rem;
   padding: 0;
   margin: 0;
@@ -62,7 +62,8 @@
 #append {
   grid-area: b;
   color: white;
-  align-self: center;
+  align-self: flex-end;
+  font-size: smaller;
 }
 
 #bar {
