@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from '@angular/platform-browser';
 import {StudataService} from '../studata.service';
 import {Student} from '../Student';
 
@@ -10,7 +11,14 @@ import {Student} from '../Student';
 export class CustomizerComponent implements OnInit {
   students: Student[] = []
 
-  constructor(private studataService:StudataService) { }
+  constructor(
+      private studataService:StudataService,
+      private titleService:Title
+  ) { }
+
+  changeTitle(title:string):void{
+      this.titleService.setTitle(title);
+  }
 
   ngOnInit(): void {
     this.studataService.getStudents()
