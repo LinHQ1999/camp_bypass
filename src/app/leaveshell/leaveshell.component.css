@@ -4,7 +4,7 @@ header {
   width: 100vw;
   z-index: 990;
   display: flex;
-  height: 7vh;
+  height: 6vh;
   justify-content: space-between;
   align-items: center;
   background: #FDFDFD;
@@ -12,33 +12,36 @@ header {
 
 header>img {
   padding-left: 5vw;
-  height: 1.5rem;
+  height: 1.3rem;
 }
 
 #title .ico {
-  width: 1.5rem;
+  width: 1.1rem;
   vertical-align: top;
+  margin: 0 .5em;
 }
 
 #title .k {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  vertical-align: top;
 }
 
 .outlink {
-  font-size: .9rem;
+  font-size: .8rem;
   color: rgb(0, 247, 255);
 }
 
 nav {
   position: fixed;
-  top: 7vh;
+  top: 6vh;
   width: 100vw;
   z-index: 999;
   display: flex;
   justify-content: space-around;
   background-color: #FDFDFD;
   min-height: 6vh;
-  border-top: 2px #D7D7D7 solid;
+  border-top: 1px #D7D7D7 solid;
 }
 
 nav button {
@@ -59,21 +62,4 @@ nav .act {
 
 article {
   overflow: scroll;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  width: 100vw;
-  height: 7vh;
-}
-
-footer button {
-  flex-grow: 1;
-  background: white;
-  font-size: 1.3rem;
-  color: #687178;
-  margin: 0;
-  border: 0.5px #DCE0E3 solid;
 }

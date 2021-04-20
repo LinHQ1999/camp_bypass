@@ -28,7 +28,7 @@
     </div>
     <div class="item">
       <span class="k">实际休假时间:
-        <span class="v">{{startDate|date:"M-dd HH:mm"}} ~ {{endDate|date:"M-dd HH:mm"}}（共 3 天）</span>
+        <span class="v">{{startDate|date:"MM-dd HH:mm"}} ~ {{endDate|date:"MM-dd HH:mm"}}（共 2 天）</span>
       </span>
     </div>
   </div>
@@ -40,11 +40,11 @@
       <h3>我的&nbsp;请假申请</h3>
       <div class="item">
         <div class="k">开始时间：</div>
-        <div class="v" style="font-weight: bold;">{{startDate|date:"M-dd HH:mm"}}</div>
+        <div class="v" style="font-weight: bold;">{{startDate|date:"MM-dd HH:mm"}}</div>
       </div>
       <div class="item">
         <div class="k">结束时间：</div>
-        <div class="v" style="font-weight: bold;">{{endDate|date:"M-dd HH:mm"}}</div>
+        <div class="v" style="font-weight: bold;">{{endDate|date:"MM-dd HH:mm"}}</div>
       </div>
       <div class="item">
         <div class="k">审批流程：</div>
@@ -72,17 +72,22 @@
       </div>
     </div>
     <div class="rt">
-        <div id="last">1天18小时</div>
+      <div id="last">1天18小时</div>
     </div>
   </div>
   <div class="delim"></div>
   <div class="subscribe">
-    <h3>审批状态</h3>
+    <h3>审批流程记录</h3>
     <div id="mix">
       <img src="assets/flow.png" alt="">
-      <p class="first">{{student.name}} - 发起申请</p>
-      <p class="second">一级：{{student.teacher}} - 审批<span style="color: #62B091;font-weight: bold;">通过</span></p>
+      <p class="first v">{{student.name}} - 发起申请</p>
+      <p class="second v">一级：{{student.teacher}} - 审批<span style="color: #62B091;font-weight: bold;">通过</span></p>
       <p class="last">审批意见：无</p>
     </div>
   </div>
+  <footer>
+    <button>转发</button>
+    <button>申请续假</button>
+    <button style="background: '#3399FE';color: white;">去销假</button>
+  </footer>
 </div>
