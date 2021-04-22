@@ -2,6 +2,7 @@
 body {
   background: #939495;
   margin: 0;
+  font-family:'Segoe UI';
 }
 
 button:hover {

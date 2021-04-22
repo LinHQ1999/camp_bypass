@@ -1,11 +1,15 @@
-header {
+.wrapper {
   position: fixed;
   top: 0;
-  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-content: stretch;
+}
+
+header {
   z-index: 990;
   display: flex;
   height: 6vh;
-  justify-content: space-between;
   align-items: center;
   background: #FDFDFD;
 }
@@ -13,6 +17,11 @@ header {
 header>img {
   padding-left: 5vw;
   height: 1.3rem;
+}
+
+#title {
+  flex-grow: 1;
+  text-align: center;
 }
 
 #title .ico {
@@ -33,8 +42,6 @@ header>img {
 }
 
 nav {
-  position: fixed;
-  top: 6vh;
   width: 100vw;
   z-index: 999;
   display: flex;
@@ -61,5 +68,12 @@ nav .act {
 }
 
 article {
+  /* 撑起上部，否则会被遮盖 */
+  margin-top: 12vh;
   overflow: scroll;
+}
+
+/*吸顶*/
+.totop {
+  margin-top: 6vh;
 }

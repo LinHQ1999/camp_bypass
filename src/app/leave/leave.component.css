@@ -1,6 +1,4 @@
 #wrapper {
-  /* 撑起上部，否则会被遮盖 */
-  margin-top: 11.9vh;
   height: 90vh;
   width: 100vw;
   background: #efefef;
@@ -69,23 +67,23 @@
 #bar {
   overflow: hidden;
   min-height: 1.1rem;
-  margin-bottom: -4px;
+  margin-bottom: -24px;
 }
 
 #bar img {
   height: 1.1rem;
-  animation: 12s linear 1s infinite running loading ;
+  animation: 24s linear 1s infinite running loading ;
 }
 
 @keyframes loading {
-  from {transform: translateX(-160vw);}
+  from {transform: translateX(-435vw);}
   to {transform: translateX(0);}
 }
 
 /*进度条上的文字*/
 
 #bar div {
-  position: absolute;
+  position: relative;
   z-index: 99;
   color: white;
   background-color: black;
@@ -95,8 +93,9 @@
   text-align: center;
   font-size: 0.8rem;
   border-radius: 10px;
-  top: 26.5vh;
-  left: 22.5vw;
+  top: -22px;
+  left: 25vw;
+
   padding: 0 .2em .3em .2em;
 }
 

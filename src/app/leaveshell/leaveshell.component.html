@@ -1,15 +1,17 @@
-<header>
-    <img routerLink="/" class="ico" src="assets/back.png" alt="">
-    <div id="title">
-        <img class="ico" src="assets/ok.png" alt="">
-        <span class="k">请假详情</span>
-    </div>
-    <span class="outlink" style="padding-right: 4vw">反馈</span>
-</header>
-<nav>
-    <button routerLink="./show/{{sno}}"  class="act">请假信息</button>
-    <button routerLink="./qrcode">核验二维码</button>
-</nav>
-<article>
+<div class="wrapper">
+    <header *ngIf="!simple">
+        <img routerLink="/" class="ico" src="assets/back.png" alt="">
+        <div id="title">
+            <img class="ico" src="assets/ok.png" alt="">
+            <span class="k">请假详情</span>
+        </div>
+        <span class="outlink" style="padding-right: 4vw">反馈</span>
+    </header>
+    <nav>
+        <button routerLink="./show/{{sno}}" class="act">请假信息</button>
+        <button routerLink="./qrcode">核验二维码</button>
+    </nav>
+</div>
+<article [class.totop]="simple">
     <router-outlet></router-outlet>
 </article>

@@ -7,6 +7,8 @@ ol {
   border-radius: 8px;
   border:2px white solid;
   background-color: azure;
+  margin: 4vh auto;
+  max-width: 80vw;
 }
 
 ol li {
