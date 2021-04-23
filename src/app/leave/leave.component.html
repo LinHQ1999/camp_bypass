@@ -3,20 +3,7 @@
     <img class="ico" src="assets/question.png" alt="">
     如何销假?
   </div>
-  <div id="status">
-    <div id="checked">
-      <img class="ico" src="assets/ok3.png" alt="">
-      <span>审批已通过</span>
-    </div>
-    <div id="append">个人信息></div>
-    <p id="state">正在休假中</p>
-  </div>
-  <div id="bar">
-    <img src="assets/superbar2.png" alt="">
-    <div>
-      当前时间：{{currentDate | date: "yyyy-M-d HH:mm:ss"}}
-    </div>
-  </div>
+  <app-bar [currentDate]="currentDate"></app-bar>
   <div class="subscribe">
     <div class="item">
       <span class="k">请假类型: <span class="v">出校请假</span></span>

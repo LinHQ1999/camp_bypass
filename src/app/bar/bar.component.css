@@ -1,0 +1,85 @@
+#status {
+    max-height: 10vh;
+    background: linear-gradient(180deg, #04a856, #01dc6f);
+    display: grid;
+    grid-template-columns: 1fr 2.3fr 1fr;
+    grid-template-rows: 3vh 6vh;
+    grid-template-areas: '. a b' '. c .';
+    justify-items: center;
+    padding: 1.5vh;
+}
+
+#state {
+    grid-area: c;
+    align-self: flex-start;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: .1em;
+}
+
+#checked {
+    grid-area: a;
+}
+
+#status img {
+    width: 1.2rem;
+    margin-bottom: 1vh;
+}
+
+#status span {
+    color: white;
+    letter-spacing: .1em;
+}
+
+#append {
+    grid-area: b;
+    color: white;
+    align-self: flex-end;
+    font-size: smaller;
+}
+
+#bar {
+    overflow: hidden;
+    min-height: 1.1rem;
+    margin-bottom: -24px;
+}
+
+#bar img {
+    height: 1.1rem;
+    animation: 24s linear 1s infinite running loading;
+}
+
+@keyframes loading {
+    from {
+        transform: translateX(-435vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*进度条上的文字*/
+
+#bar div {
+    position: relative;
+    z-index: 99;
+    color: white;
+    background-color: black;
+    opacity: .45;
+    width: 50vw;
+    height: .9rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    top: -22px;
+    left: 25vw;
+    padding: 0 .2em .3em .2em;
+}
+
+.ico {
+  vertical-align: middle;
+  margin-right: 1vw;
+}
