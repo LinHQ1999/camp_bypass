@@ -8,8 +8,8 @@
         <span class="outlink" style="padding-right: 4vw">反馈</span>
     </header>
     <nav>
-        <button routerLink="./show/{{sno}}" class="act">请假信息</button>
-        <button routerLink="./qrcode">核验二维码</button>
+        <button routerLink="./show/{{sno}}" routerLinkActive="act">请假信息</button>
+        <button routerLink="./qrcode/{{sno}}" routerLinkActive="act">核验二维码</button>
     </nav>
 </div>
 <article [class.totop]="simple">

@@ -23,9 +23,9 @@ const routes: Routes = [
     path: "leave/:sno",
     component: LeaveshellComponent,
     children: [
-      {path: "show/:sno", component: LeaveComponent},
-      {path: "qrcode", component: QrcodeComponent},
-      {path: "**", redirectTo: "show"}
+      { path: "show/:sno", component: LeaveComponent },
+      { path: "qrcode/:sno", component: QrcodeComponent },
+      { path: "**", redirectTo: "show" }
     ],
   }
 ];
