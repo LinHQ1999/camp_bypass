@@ -1,0 +1,32 @@
+#question {
+  background: #FE9900;
+  max-height: 2.8vh;
+  font-size: .8rem;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+.info {
+    background: #F5F6F8;
+    height: 80vh;
+    text-align: center;
+}
+
+.info img {
+  max-width: 50vw;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+
+.info .current {
+  margin: 0 auto;
+  max-width: 70vw;
+  padding-top: 3px;
+  min-height: 1.8rem;
+  background: #5297F7;
+  color: white;
+  border-radius: 26px;
+  font-size: 1rem;
+  font-weight: bold;
+}

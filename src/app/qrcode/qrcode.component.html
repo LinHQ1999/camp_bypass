@@ -1,1 +1,12 @@
-<p>qrcode works!</p>
+<div class="layout">
+    <div id="question">
+        请出示专属核验二维码，用于验证请假单真伪。
+    </div>
+    <app-bar [currentDate]="now"></app-bar>
+    <div class="info">
+        <img src="assets/qrcodes/{{sno}}.png" alt="">
+        <div class="current">
+            当前时间: {{now | date: "yyyy-MM-dd HH:mm:ss"}}
+        </div>
+    </div>
+</div>

@@ -11,6 +11,7 @@ import {ShowComponent} from './show/show.component';
 import { LeaveComponent } from './leave/leave.component';
 import { LeaveshellComponent } from './leaveshell/leaveshell.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import { BarComponent } from './bar/bar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
     CustomizerComponent,
     LeaveComponent,
     LeaveshellComponent,
-    QrcodeComponent
+    QrcodeComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,
