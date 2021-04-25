@@ -49,12 +49,12 @@
 
 #bar img {
     height: 1.1rem;
-    animation: 24s linear 1s infinite running loading;
+    animation: 23s linear 1s infinite running loading;
 }
 
 @keyframes loading {
     from {
-        transform: translateX(-435vw);
+        transform: translateX(-390vw);
     }
     to {
         transform: translateX(0);
