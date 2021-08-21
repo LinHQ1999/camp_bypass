@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href /camp_bypass/",
+    "build": "ng build --prod --base-href /camp_bypass/ --deploy-url /camp_bypass/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
