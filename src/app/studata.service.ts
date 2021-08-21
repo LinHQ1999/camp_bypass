@@ -7,8 +7,8 @@ import {Student} from './Student'
     providedIn: 'root'
 })
 export class StudataService {
-    userListUrl: string = "/linhq/users";
-    //userListUrl: string = "assets/users.json";
+    //userListUrl: string = "/linhq/users";
+    userListUrl: string = "assets/users.json";
     constructor(private client: HttpClient) {}
 
     getStudents(): Observable<Student[]> {
