@@ -3,6 +3,8 @@ package main
 import (
 	"embed"
 	"net/http"
+	"os"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -32,7 +34,33 @@ func main() {
 		ctx.File("users.json")
 	})
 
-	if err := g.Run(":9080"); err != nil {
-		panic(err.Error())
+	//if err := g.Run(":9080"); err != nil {
+	//	panic(err.Error())
+	//}
+	tryTlsServe(g, ":9080")
+}
+
+func tryTlsServe(g *gin.Engine, addr string) {
+	cert, key := "", ""
+	dir, err := os.ReadDir(".")
+	if err != nil {
+		panic("错误的部署路径！" + err.Error())
+	}
+	for _, v := range dir {
+		name := v.Name()
+		if strings.Contains(name, "pem") {
+			cert = name
+		} else if strings.Contains(name, "key") {
+			key = name
+		}
+	}
+	if cert != "" && key != "" {
+		if err := g.RunTLS(addr, cert, key); err != nil {
+			panic(err)
+		}
+	} else {
+		if err := g.Run(addr); err != nil {
+			panic(err)
+		}
 	}
 }
