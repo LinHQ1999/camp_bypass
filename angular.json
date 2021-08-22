@@ -22,12 +22,15 @@
           "options": {
             "outputPath": "docs",
             "index": "src/index.html",
+            "baseHref": "/camp_bypass/",
+            "deployUrl": "/camp_bypass/",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
               "src/favicon.ico",
+              "src/404.html",
               "src/assets",
               "src/manifest.webmanifest"
             ],
