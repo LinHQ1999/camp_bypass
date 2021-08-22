@@ -1,7 +1,7 @@
 {
   "name": "今日校园",
   "short_name": "今日校园",
-  "theme_color": "#1976d2",
+  "theme_color": "#fdfdfd",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
