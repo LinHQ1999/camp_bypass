@@ -70,10 +70,29 @@ nav .act {
 article {
   /* 撑起上部，否则会被遮盖 */
   margin-top: 12vh;
+  /*撑起下部，同理*/
+  margin-bottom: 7vh;
   overflow: scroll;
 }
 
 /*吸顶*/
 .totop {
   margin-top: 6vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  height: 7vh;
+}
+
+footer button {
+  flex-grow: 1;
+  background: white;
+  font-size: 1.3rem;
+  color: #687178;
+  margin: 0;
+  border: 0.5px #DCE0E3 solid;
 }

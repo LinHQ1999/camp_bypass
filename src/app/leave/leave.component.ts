@@ -48,7 +48,7 @@ constructor(
       const randIndex = Math.floor(Math.random() * this.student?.reasons.length)
       this.leaveReason = this.student.reasons[randIndex];
     } else {
-      this.leaveReason = "外出实习";
+      this.leaveReason = "帮忙拿东西";
     }
   }
 }

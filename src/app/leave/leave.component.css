@@ -61,69 +61,6 @@
   padding: 0.1rem;
   width: 6.5rem;
 }
-
-#mix {
-  display: grid;
-  max-height: 15vh;
-  max-width: 70vw;
-  margin: 2vh 0 1vh 4vw;
-  grid-template-rows: 1fr 1fr 0.5fr 1fr;
-  grid-template-columns: 2rem 2fr 1fr;
-  grid-template-areas: 'a b .' 'a c .' '. . .' '. d .';
-  font-size: .8rem;
-}
-
-#mix img {
-  width: 1.5rem;
-  grid-area: a;
-  justify-self: center;
-  align-self: center;
-}
-
-#mix p {
-  margin: 0;
-  padding: 0;
-}
-
-#mix .first {
-  grid-area: b;
-}
-
-#mix .second {
-  grid-area: c;
-  align-self: center;
-}
-
-#mix .last {
-  grid-area: d;
-  background: #F6F7F9;
-  color: #A7AAB2;
-  border-radius: 4px;
-  border: 1px solid #DADEE1;
-  padding: 0.4em;
-  width: 70vw;
-  height: 1.5rem;
-  align-self: center;
-  justify-self: start;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  width: 100vw;
-  height: 7vh;
-}
-
-footer button {
-  flex-grow: 1;
-  background: white;
-  font-size: 1.3rem;
-  color: #687178;
-  margin: 0;
-  border: 0.5px #DCE0E3 solid;
-}
-
 .subscribe {
   background: white;
   display: flex;
@@ -132,15 +69,72 @@ footer button {
   padding: 0.5rem 0.8rem 0.5rem 5vw;
 }
 
-.subscribe h3 {
-  margin: 0 0 .1rem 0;
-  font-weight: normal;
-  font-size: .9rem;
+.flow {
+  border-left: 1px solid #e1e6ea;
+  padding-left: 15px;
+  margin-left: 1rem;
 }
+
+.flow li {
+  position: relative;
+  margin: 0.7rem 0;
+  display: flex;
+}
+
+.flow li::marker {
+  content: "";
+}
+
+/*通过定位将元素挪到 ul 的左边框上去*/
+.flow .circle {
+  position: absolute;
+  left: -23.5px;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+  background: white;
+}
+
+.flow li .v {
+  flex-grow: 1;
+  text-align: right;
+}
+
+#message{
+  grid-area: d;
+  background: #F6F7F9;
+  color: #A7AAB2;
+  border-radius: 4px;
+  border: 1px solid #DADEE1;
+  padding: 0.4em;
+  align-self: center;
+  justify-self: start;
+}
+
+#s1 {
+  margin-top: 0;
+}
+
+#s1 .circle {
+  border-color: #389bfe;
+}
+
+#s3 {
+  margin-bottom: 0;
+}
+
+#s2 .circle,#s3 .circle{
+  border-color: #30d583;
+}
+
+
+/*组件*/
 
 .item {
   display: flex;
   align-items: baseline;
+  margin: 0.3em 0;
 }
 
 .item span {
@@ -169,4 +163,10 @@ footer button {
 .v {
   color: #586369;
   font-size: 0.8rem;
+}
+
+.title {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 100;
 }
