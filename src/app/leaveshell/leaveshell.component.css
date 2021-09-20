@@ -1,9 +1,8 @@
 .wrapper {
-  position: fixed;
-  top: 0;
   display: flex;
   flex-flow: column;
-  align-content: stretch;
+  justify-items: flex-start;
+  height: 100vh;
 }
 
 header {
@@ -68,24 +67,14 @@ nav .act {
 }
 
 article {
-  /* 撑起上部，否则会被遮盖 */
-  margin-top: 12vh;
-  /*撑起下部，同理*/
-  margin-bottom: 7vh;
   overflow: scroll;
 }
 
-/*吸顶*/
-.totop {
-  margin-top: 6vh;
-}
-
 footer {
-  position: fixed;
-  bottom: 0;
   display: flex;
   width: 100vw;
   height: 7vh;
+  justify-self: flex-end;
 }
 
 footer button {
