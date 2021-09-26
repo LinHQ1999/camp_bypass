@@ -7,20 +7,6 @@
   justify-content: flex-start;
 }
 
-#question {
-  background: #FE9900;
-  max-height: 2.8vh;
-  font-size: .8rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
-#question .ico {
-  height: .8rem;
-  margin-bottom: .5vh;
-}
-
 #info {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -143,7 +129,7 @@
   min-height: .8rem;
   color: #929292;
   font-size: .9rem;
-  padding: .3em 0 .3em .8em;
+  padding: 0 0 .5rem .8rem;
 }
 
 .ico {

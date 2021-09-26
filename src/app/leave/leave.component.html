@@ -1,8 +1,4 @@
-<div id="wrapper" *ngIf="student">
-  <div id="question">
-    <img class="ico" src="assets/question.png" alt="">
-    如何销假?
-  </div>
+<div id="wrapper" *ngIf="student;else warn">
   <app-bar [currentDate]="currentDate"></app-bar>
   <div class="subscribe">
     <div class="item">
@@ -91,3 +87,7 @@
     </ul>
   </div>
 </div>
+<ng-template #warn>
+  <h5 style="color: red;text-align: center;">数据拉取失败！请从主页重新进入此页面！</h5>
+  <a routerLink="/customizer">点此回到主页面</a>
+</ng-template>

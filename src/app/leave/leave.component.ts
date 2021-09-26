@@ -9,7 +9,7 @@ import { Student } from '../Student';
   styleUrls: ['./leave.component.css']
 })
 export class LeaveComponent implements OnInit {
-  student: Student | undefined;
+  student: Student | null = null;
 
   startDate: Date = new Date();
   endDate: Date = new Date();
@@ -37,10 +37,7 @@ constructor(
   }
 
   getStudents(): void {
-    const sno: string | null = this.route.snapshot.paramMap.get("sno");
-    this.studata.getStudents()
-      .subscribe(stus =>
-        this.student = stus.find(stu => stu.sno === sno));
+    this.student = this.studata.Current;
   }
 
   getReason(): void {

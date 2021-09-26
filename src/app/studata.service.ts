@@ -9,9 +9,22 @@ import {Student} from './Student'
 export class StudataService {
     //userListUrl: string = "/linhq/users";
     userListUrl: string = "assets/users.json";
+    current:Student|null = null;
+
     constructor(private client: HttpClient) {}
 
     getStudents(): Observable<Student[]> {
         return this.client.get<Student[]>(this.userListUrl);
     }
+    
+    public set Current(stu : Student|null) {
+        this.current = stu;
+    }
+
+    
+    public get Current() : Student|null {
+        return this.current;
+    }
+    
+    
 }

@@ -9,24 +9,16 @@ import {Student} from '../Student';
     styleUrls: ['./show.component.css']
 })
 export class ShowComponent implements OnInit {
+    title: string = "签到";
     now: Date = new Date();
-    student: Student | undefined;
+    student: Student | null = null;
 
 
     constructor(
         private studataService: StudataService,
-        private route: ActivatedRoute
     ) {}
 
     ngOnInit(): void {
-        this.getStudent();
+        this.student = this.studataService.Current;
     }
-
-    getStudent(): void {
-        const sno: string | null = this.route.snapshot.paramMap.get("sno");
-        this.studataService.getStudents()
-            .subscribe(stus =>
-                       this.student = stus.find(stu => stu.sno === sno));
-    }
-
 }

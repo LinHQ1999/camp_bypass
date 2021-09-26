@@ -3,13 +3,13 @@
   <ol>
     <h3>进校签到</h3>
     <li *ngFor="let stu of students">
-      <a (click)="changeTitle('签到')" routerLink="/show/{{stu.sno}}">{{stu.name}}: {{stu.sno}}</a>
+      <a (click)="renewState('签到', stu)" routerLink="/show">{{stu.name}}: {{stu.sno}}</a>
     </li>
   </ol>
   <ol>
     <h3>离校申请</h3>
     <li *ngFor="let stu of students">
-      <a (click)="changeTitle('请假信息')" routerLink="/leave/{{stu.sno}}/show/{{stu.sno}}">{{stu.name}}: {{stu.sno}}</a>
+      <a (click)="renewState('请假信息', stu)" routerLink="/leave">{{stu.name}}: {{stu.sno}}</a>
     </li>
   </ol>
 </div>

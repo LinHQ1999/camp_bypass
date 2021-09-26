@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { StudataService } from '../studata.service';
+import Item from '../shell/nav/item';
 
 @Component({
   selector: 'app-leaveshell',
@@ -8,18 +7,17 @@ import { StudataService } from '../studata.service';
   styleUrls: ['./leaveshell.component.css']
 })
 export class LeaveshellComponent implements OnInit {
-  sno: string = "";
-  simple: boolean | undefined;
+  title: string = "请假详情";
+  links: Array<Item> = [];
+
 
   constructor(
-    private route: ActivatedRoute,
-    private studata: StudataService
   ) { }
 
   ngOnInit(): void {
-    this.sno = <string>this.route.snapshot.paramMap.get("sno");
-    // 不要分开写，因为是异步中的操作
-    this.studata.getStudents()
-      .subscribe(stu => this.simple = stu.find(stu => stu.sno === this.sno)?.simple)
+    this.links = [
+      { text: "请假信息", href: `./show`, warning: { hasIcon: true, text: "如何销假？" } },
+      { text: "核验二维码", href: `./qrcode`, warning: { hasIcon: false, text: "请出示专属核验二维码，用于验证请假单真伪。" } }
+    ];
   }
 }
