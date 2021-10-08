@@ -4,7 +4,7 @@
 </nav>
 <div id="question">
     <img *ngIf="links[active].warning.hasIcon" class="ico" src="assets/question.png" alt="">
-    <div>
+    <div *ngIf="links[active].warning">
         {{links[active].warning.text}}
     </div>
 </div>
