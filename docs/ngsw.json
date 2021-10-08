@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1632673007036,
+  "timestamp": 1633678601517,
   "index": "/camp_bypass/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,12 @@
       "urls": [
         "/camp_bypass/favicon.ico",
         "/camp_bypass/index.html",
-        "/camp_bypass/main.1c96d45c8f67991c163d.js",
+        "/camp_bypass/main.js",
         "/camp_bypass/manifest.webmanifest",
-        "/camp_bypass/polyfills.00096ed7d93ed26ee6df.js",
-        "/camp_bypass/runtime.0c5186af95f1cf87b623.js",
-        "/camp_bypass/styles.b9dada1f923f84af9ab3.css"
+        "/camp_bypass/polyfills.js",
+        "/camp_bypass/runtime.js",
+        "/camp_bypass/styles.css",
+        "/camp_bypass/vendor.js"
       ],
       "patterns": []
     },
@@ -74,12 +75,13 @@
     "/camp_bypass/assets/time.png": "76bb6290877b62cad101152fcb9158c2f6d8d9a2",
     "/camp_bypass/assets/users.json": "7814f4182e1d24d81b795966ccac16fa2e1e9b1b",
     "/camp_bypass/favicon.ico": "4ac62292aaa20c5e6a0b5d84565dd4df97bdd772",
-    "/camp_bypass/index.html": "1bd5b6c5917760f1b37a276234017d3824768094",
-    "/camp_bypass/main.1c96d45c8f67991c163d.js": "8bad7ba33cead589f4522d7a505eb88a5f0a0355",
+    "/camp_bypass/index.html": "abfaae96c2c9b0a1bd2da1277ed8ace21b5d0929",
+    "/camp_bypass/main.js": "52876ff6deeae488dbb13eb4da528c7d31cc9eed",
     "/camp_bypass/manifest.webmanifest": "ed2c9afb9c66c20925e3f855e3c70740392c5032",
-    "/camp_bypass/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/camp_bypass/runtime.0c5186af95f1cf87b623.js": "b1e532d5997619f2b6ad67993a879a8047080e6b",
-    "/camp_bypass/styles.b9dada1f923f84af9ab3.css": "73eef4ad324e2cebfdf7bf7a21826ac130776e74"
+    "/camp_bypass/polyfills.js": "d2acef8253a968169e4397e54bb58c7aa3d35db7",
+    "/camp_bypass/runtime.js": "77b15c736039cbc4e91d7916382b761e7af112e7",
+    "/camp_bypass/styles.css": "d80cbf52a4e0942a114eb3e8d909196c78e31ab9",
+    "/camp_bypass/vendor.js": "b1e8f456ed8a86454c7d8eb27463fb2c3ae91cb2"
   },
   "navigationUrls": [
     {
