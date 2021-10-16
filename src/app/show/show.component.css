@@ -1,19 +1,17 @@
 #show {
+  position: fixed;
+  top: 0;
 	color: white;
 	display: flex;
+  max-height: 100vh;
 	flex-flow: column;
 	align-items: center;
-}
-
-#intro {
-  position: fixed;
-  margin-top: -1px;
-  left: 3vw;
+  overflow: auto;
 }
 
 #box {
-  margin-top: 37vh;
-  margin-bottom: 26vh;
+  margin-top: 27vh;
+  position: relative;
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -47,12 +45,14 @@
 #bar_content {
 	background: rgba(149, 149, 149, 0.65);
 	border-radius: 32px;
-	font-size: 1.8vh;
-	padding: 0.2rem 0.5rem 0 0.5rem;
+	font-size: 0.7rem;
+  font-weight: bolder;
+	padding: 0 0.8rem;
 	display: inline;
-	position: relative;
+	position: absolute;
 	z-index: 9;
-	top: -3.5vh;
+  top: -0.1rem;
+  left: 30vw;
 }
 
 @keyframes load {

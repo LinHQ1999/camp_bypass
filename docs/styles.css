@@ -4,8 +4,10 @@ body {
   margin: 0;
   font-family:'.PingFang-SC-Regular';
 }
-
 button:hover {
   background: white;
   cursor: pointer;
 }
+
+
+/*# sourceMappingURL=styles.css.map*/

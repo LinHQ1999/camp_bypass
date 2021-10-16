@@ -1,0 +1,10 @@
+<nav>
+    <button (click)="switch(0)" routerLink="{{links[0].href}}" routerLinkActive="act">{{links[0].text}}</button>
+    <button (click)="switch(1)" routerLink="{{links[1].href}}" routerLinkActive="act">{{links[1].text}}</button>
+</nav>
+<div id="question">
+    <img *ngIf="links[active].warning.hasIcon" class="ico" src="assets/question.png" alt="">
+    <div *ngIf="links[active].warning">
+        {{links[active].warning.text}}
+    </div>
+</div>

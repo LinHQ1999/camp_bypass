@@ -1,0 +1,36 @@
+header {
+  z-index: 990;
+  display: flex;
+  height: 6vh;
+  width: 100vw;
+  align-items: center;
+  background: #FDFDFD;
+  color: black;
+}
+
+header>img {
+  padding-left: 5vw;
+  height: 1.3rem;
+}
+
+#title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#title .ico {
+  width: 1.1rem;
+  vertical-align: top;
+  margin: 0 .5em;
+}
+
+#title .k {
+  font-size: 1rem;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.outlink {
+  font-size: .8rem;
+  color: #EA3F34;
+}

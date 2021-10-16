@@ -1,7 +1,5 @@
 <div id="show" *ngIf="student;else Error">
-  <div *ngIf="!student.simple">
-    <img id="intro" src="assets/nav.png" style="width: 100%; transform: scale(1.08) translateY(-5px);" alt="">
-  </div>
+  <app-titlebar [title]="title"></app-titlebar>
   <div id="box">
     <div id="wrapper">
       <!--动态防伪条?-->
@@ -40,6 +38,6 @@
   </div>
 </div>
 <ng-template #Error>
-  <h5 style="color: red;text-align: center;">数据拉取失败！</h5>
+  <h5 style="color: red;text-align: center;">数据拉取失败！请从主页重新进入此页面！</h5>
   <a routerLink="/customizer">点此回到主页面</a>
 </ng-template>

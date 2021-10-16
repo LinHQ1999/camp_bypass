@@ -42,9 +42,10 @@
 }
 
 #bar {
+    /*给说明文字定位用*/
+    position: relative;
     overflow: hidden;
-    min-height: 1.1rem;
-    margin-bottom: -24px;
+    margin-bottom: -5px;
 }
 
 #bar img {
@@ -62,7 +63,7 @@
 /*进度条上的文字*/
 
 #bar div {
-    position: relative;
+    position: absolute;
     z-index: 99;
     color: white;
     background-color: black;
@@ -72,9 +73,9 @@
     text-align: center;
     font-size: 0.8rem;
     border-radius: 10px;
-    top: -22px;
     left: 25vw;
-    padding: 0 .2em .3em .2em;
+    bottom: 4px;
+    padding: 0px 4px 4px 4px;
 }
 
 .ico {

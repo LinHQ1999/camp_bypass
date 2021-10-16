@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { StudataService } from '../studata.service';
 
 @Component({
   selector: 'app-qrcode',
@@ -10,10 +10,10 @@ export class QrcodeComponent implements OnInit {
   now: Date = new Date();
   sno: string = "";
 
-  constructor(private router: ActivatedRoute) { }
+  constructor(private studata:StudataService) { }
 
   ngOnInit(): void {
-    this.sno = <string>this.router.snapshot.paramMap.get("sno");
+    this.sno = this.studata.Current?.sno ?? "";
     setInterval(() => {
       this.now = new Date();
     }, 1000)

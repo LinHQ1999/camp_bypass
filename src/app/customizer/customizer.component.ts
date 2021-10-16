@@ -16,13 +16,14 @@ export class CustomizerComponent implements OnInit {
       private titleService:Title
   ) { }
 
-  changeTitle(title:string):void{
-      this.titleService.setTitle(title);
-  }
-
   ngOnInit(): void {
     this.studataService.getStudents()
     .subscribe(stu => this.students = stu);
+  }
+
+  renewState(title:string, user:Student):void{
+      this.titleService.setTitle(title);
+      this.studataService.Current = user;
   }
 
 }

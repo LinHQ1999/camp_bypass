@@ -1,8 +1,4 @@
-<div id="wrapper" *ngIf="student">
-  <div id="question">
-    <img class="ico" src="assets/question.png" alt="">
-    如何销假?
-  </div>
+<div id="wrapper" *ngIf="student;else warn">
   <app-bar [currentDate]="currentDate"></app-bar>
   <div class="subscribe">
     <div class="item">
@@ -24,7 +20,9 @@
   </div>
   <div id="info" class="subscribe">
     <div class="lt">
-      <h3>我的&nbsp;请假申请</h3>
+      <div class="title">
+        我的&nbsp;请假申请
+      </div>
       <div class="item">
         <div class="k">开始时间：</div>
         <div class="v" style="font-weight: bold;">{{startDate|date:"MM-dd HH:mm"}}</div>
@@ -55,7 +53,7 @@
       </div>
       <div class="item">
         <div class="k">目的地：</div>
-        <div class="v">万达广场</div>
+        <div class="v">609科创实训院</div>
       </div>
     </div>
     <div class="rt">
@@ -64,17 +62,32 @@
   </div>
   <div class="delim"></div>
   <div class="subscribe">
-    <h3>审批流程记录</h3>
-    <div id="mix">
-      <img src="assets/flow.png" alt="">
-      <p class="first v">{{student.name}} - 发起申请</p>
-      <p class="second v">一级：{{student.teacher}} - 审批<span style="color: #62B091;font-weight: bold;">通过</span></p>
-      <p class="last">审批意见：无</p>
+    <div class="title">
+      审批流程记录
     </div>
+    <ul class="flow v">
+      <li class="v" id="s1">
+        <div class="circle apply">
+        </div>
+        {{student.name}} - 发起申请
+        <div class="v">{{startDate|date:"MM-dd HH:mm"}}</div>
+      </li>
+      <li class="v" id="s2">
+        <div class="circle">
+        </div>一级：{{student.teacher}} - 审批<span style="font-weight:100;color: #30d583;font-weight: bold;">通过</span>
+        <div class="v">{{startDate|date:"MM-dd HH:mm"}}</div>
+      </li>
+      <div id="message">审批意见：无</div>
+      <li class="v" id="s3">
+        <div class="circle">
+        </div>二级：李小华 - 审批<span style="font-weight:100;color: #30d583;font-weight: bold;">通过</span>
+        <div class="v">{{startDate|date:"MM-dd HH:mm"}}</div>
+      </li>
+      <div id="message">审批意见：无</div>
+    </ul>
   </div>
-  <footer>
-    <button>转发</button>
-    <button>申请续假</button>
-    <button style="background: '#3399FE';color: white;">去销假</button>
-  </footer>
 </div>
+<ng-template #warn>
+  <h5 style="color: red;text-align: center;">数据拉取失败！请从主页重新进入此页面！</h5>
+  <a routerLink="/customizer">点此回到主页面</a>
+</ng-template>

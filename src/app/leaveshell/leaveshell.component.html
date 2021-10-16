@@ -1,17 +1,12 @@
 <div class="wrapper">
-    <header *ngIf="!simple">
-        <img routerLink="/" class="ico" src="assets/back.png" alt="">
-        <div id="title">
-            <img class="ico" src="assets/ok.png" alt="">
-            <span class="k">请假详情</span>
-        </div>
-        <span class="outlink" style="padding-right: 4vw">反馈</span>
-    </header>
-    <nav>
-        <button routerLink="./show/{{sno}}" routerLinkActive="act">请假信息</button>
-        <button routerLink="./qrcode/{{sno}}" routerLinkActive="act">核验二维码</button>
-    </nav>
+    <app-titlebar [title]="title"></app-titlebar>
+    <app-nav [links]="links"></app-nav>
+    <article>
+        <router-outlet></router-outlet>
+    </article>
+    <footer>
+        <button>转发</button>
+        <button>申请续假</button>
+        <button style="background: '#3399FE';color: white;">去销假</button>
+    </footer>
 </div>
-<article [class.totop]="simple">
-    <router-outlet></router-outlet>
-</article>

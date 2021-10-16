@@ -12,7 +12,7 @@ const routes: Routes = [
     redirectTo: "/customizer", pathMatch: 'full'
   },
   {
-    path: "show/:sno",
+    path: "show",
     component: ShowComponent
   },
   {
@@ -20,11 +20,11 @@ const routes: Routes = [
     component: CustomizerComponent
   },
   {
-    path: "leave/:sno",
+    path: "leave",
     component: LeaveshellComponent,
     children: [
-      { path: "show/:sno", component: LeaveComponent },
-      { path: "qrcode/:sno", component: QrcodeComponent },
+      { path: "show", component: LeaveComponent },
+      { path: "qrcode", component: QrcodeComponent },
       { path: "**", redirectTo: "show" }
     ],
   }

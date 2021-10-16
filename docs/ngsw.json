@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629607998826,
+  "timestamp": 1633679576082,
   "index": "/camp_bypass/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,12 @@
       "urls": [
         "/camp_bypass/favicon.ico",
         "/camp_bypass/index.html",
-        "/camp_bypass/main.651adf6ff6b7a2e23a73.js",
+        "/camp_bypass/main.js",
         "/camp_bypass/manifest.webmanifest",
-        "/camp_bypass/polyfills.94daefd414b8355106ab.js",
-        "/camp_bypass/runtime.0c5186af95f1cf87b623.js",
-        "/camp_bypass/styles.c54574e352ae2c6d4fe0.css"
+        "/camp_bypass/polyfills.js",
+        "/camp_bypass/runtime.js",
+        "/camp_bypass/styles.css",
+        "/camp_bypass/vendor.js"
       ],
       "patterns": []
     },
@@ -41,7 +42,7 @@
         "/camp_bypass/assets/nav.png",
         "/camp_bypass/assets/ok.png",
         "/camp_bypass/assets/ok3.png",
-        "/camp_bypass/assets/qrcodes/2018117065.png",
+        "/camp_bypass/assets/qrcodes/2019117065.png",
         "/camp_bypass/assets/question.png",
         "/camp_bypass/assets/success.png",
         "/camp_bypass/assets/superbar.png",
@@ -66,20 +67,21 @@
     "/camp_bypass/assets/nav.png": "e6608bbd754b1927effa8e77b2a2188b0de230ff",
     "/camp_bypass/assets/ok.png": "d61023178a7316a2d22581154389391f43123cba",
     "/camp_bypass/assets/ok3.png": "c8d3705b302f65766c2a686b824704823432ae84",
-    "/camp_bypass/assets/qrcodes/2018117065.png": "e932af6c18ac434b526a521187294a5b09bea6f7",
+    "/camp_bypass/assets/qrcodes/2019117065.png": "e932af6c18ac434b526a521187294a5b09bea6f7",
     "/camp_bypass/assets/question.png": "322bd4c2f4c5498db52434575bed65f024fd1cd0",
     "/camp_bypass/assets/success.png": "e0d5abdc9a99a4153827e71c949ebafc942ad034",
     "/camp_bypass/assets/superbar.png": "56f4d4e7828f7288a10ad06b1e344d1f13afc082",
     "/camp_bypass/assets/superbar2.png": "63aab600687b3907f88fbfeded6c79f61c9cfe46",
     "/camp_bypass/assets/time.png": "76bb6290877b62cad101152fcb9158c2f6d8d9a2",
-    "/camp_bypass/assets/users.json": "1a737e80f3f95be202ff9e860771a143b00ff00a",
+    "/camp_bypass/assets/users.json": "4aa7d1ea136de94e28d6828e09cef0eefa260eed",
     "/camp_bypass/favicon.ico": "4ac62292aaa20c5e6a0b5d84565dd4df97bdd772",
-    "/camp_bypass/index.html": "2283bd2aa6eafe391410a9106f35c49c4996de3a",
-    "/camp_bypass/main.651adf6ff6b7a2e23a73.js": "de9308404d047d0087bdf2cf4b70043d67d2004a",
-    "/camp_bypass/manifest.webmanifest": "927731322d1c7349174adc1f41469c994debc6ce",
-    "/camp_bypass/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/camp_bypass/runtime.0c5186af95f1cf87b623.js": "b1e532d5997619f2b6ad67993a879a8047080e6b",
-    "/camp_bypass/styles.c54574e352ae2c6d4fe0.css": "5c56d9e05299377789bd5341fa9ba70c84e9c32f"
+    "/camp_bypass/index.html": "abfaae96c2c9b0a1bd2da1277ed8ace21b5d0929",
+    "/camp_bypass/main.js": "52876ff6deeae488dbb13eb4da528c7d31cc9eed",
+    "/camp_bypass/manifest.webmanifest": "ed2c9afb9c66c20925e3f855e3c70740392c5032",
+    "/camp_bypass/polyfills.js": "d2acef8253a968169e4397e54bb58c7aa3d35db7",
+    "/camp_bypass/runtime.js": "77b15c736039cbc4e91d7916382b761e7af112e7",
+    "/camp_bypass/styles.css": "d80cbf52a4e0942a114eb3e8d909196c78e31ab9",
+    "/camp_bypass/vendor.js": "b1e8f456ed8a86454c7d8eb27463fb2c3ae91cb2"
   },
   "navigationUrls": [
     {

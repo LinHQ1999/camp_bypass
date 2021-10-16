@@ -1,19 +1,21 @@
-import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BarComponent } from './bar/bar.component';
 import { CustomizerComponent } from './customizer/customizer.component';
-import {LocationStrategy, PathLocationStrategy} from '@angular/common';
-import {ShowComponent} from './show/show.component';
 import { LeaveComponent } from './leave/leave.component';
 import { LeaveshellComponent } from './leaveshell/leaveshell.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
-import { BarComponent } from './bar/bar.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { NavComponent } from './shell/nav/nav.component';
+import { TitlebarComponent } from './shell/titlebar/titlebar.component';
+import { ShowComponent } from './show/show.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { environment } from '../environments/environment';
     LeaveComponent,
     LeaveshellComponent,
     QrcodeComponent,
-    BarComponent
+    BarComponent,
+    TitlebarComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,7 @@ import { environment } from '../environments/environment';
     })
   ],
   providers: [
-      {provide: LocationStrategy, useClass: PathLocationStrategy}
+    { provide: LocationStrategy, useClass: PathLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
