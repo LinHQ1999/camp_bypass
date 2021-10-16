@@ -1,4 +1,13 @@
 [
-	{"name": "陈心缘", "sno": "2019117065", "simple": false, "phone": "18571627882", "teacher": "毛小娟"},
-	{"name": "李若凡", "sno": "2018117183", "simple": false, "phone": "18571346288", "teacher": "童晓芳"}
+	{
+		"name": "陈心缘",
+		"sno": "2019117065",
+		"simple": false,
+		"phone": "18571346288",
+		"teacher1": "毛小娟",
+		"teacher2": "李晓华",
+		"reason": "去 609 帮同学搬东西",
+		"from": "湖北文理学院",
+		"destination": "609 思创实训院"
+	}
 ]

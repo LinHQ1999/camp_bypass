@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1633679576082,
+  "timestamp": 1634369095105,
   "index": "/camp_bypass/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,11 @@
       "urls": [
         "/camp_bypass/favicon.ico",
         "/camp_bypass/index.html",
-        "/camp_bypass/main.js",
+        "/camp_bypass/main.824eefa735801d5a6f22.js",
         "/camp_bypass/manifest.webmanifest",
-        "/camp_bypass/polyfills.js",
-        "/camp_bypass/runtime.js",
-        "/camp_bypass/styles.css",
-        "/camp_bypass/vendor.js"
+        "/camp_bypass/polyfills.94daefd414b8355106ab.js",
+        "/camp_bypass/runtime.0c5186af95f1cf87b623.js",
+        "/camp_bypass/styles.219c4d42e9adaeda1cf2.css"
       ],
       "patterns": []
     },
@@ -73,15 +72,14 @@
     "/camp_bypass/assets/superbar.png": "56f4d4e7828f7288a10ad06b1e344d1f13afc082",
     "/camp_bypass/assets/superbar2.png": "63aab600687b3907f88fbfeded6c79f61c9cfe46",
     "/camp_bypass/assets/time.png": "76bb6290877b62cad101152fcb9158c2f6d8d9a2",
-    "/camp_bypass/assets/users.json": "4aa7d1ea136de94e28d6828e09cef0eefa260eed",
+    "/camp_bypass/assets/users.json": "83428c8403aa07bb351a6d1c085fc9fdc70a98e0",
     "/camp_bypass/favicon.ico": "4ac62292aaa20c5e6a0b5d84565dd4df97bdd772",
-    "/camp_bypass/index.html": "abfaae96c2c9b0a1bd2da1277ed8ace21b5d0929",
-    "/camp_bypass/main.js": "52876ff6deeae488dbb13eb4da528c7d31cc9eed",
-    "/camp_bypass/manifest.webmanifest": "ed2c9afb9c66c20925e3f855e3c70740392c5032",
-    "/camp_bypass/polyfills.js": "d2acef8253a968169e4397e54bb58c7aa3d35db7",
-    "/camp_bypass/runtime.js": "77b15c736039cbc4e91d7916382b761e7af112e7",
-    "/camp_bypass/styles.css": "d80cbf52a4e0942a114eb3e8d909196c78e31ab9",
-    "/camp_bypass/vendor.js": "b1e8f456ed8a86454c7d8eb27463fb2c3ae91cb2"
+    "/camp_bypass/index.html": "7c91e61efcd123a64e4c0f5abc0b160fea4b6e5e",
+    "/camp_bypass/main.824eefa735801d5a6f22.js": "7cfa06385ba712a11659278516b580f168f04c0b",
+    "/camp_bypass/manifest.webmanifest": "927731322d1c7349174adc1f41469c994debc6ce",
+    "/camp_bypass/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/camp_bypass/runtime.0c5186af95f1cf87b623.js": "b1e532d5997619f2b6ad67993a879a8047080e6b",
+    "/camp_bypass/styles.219c4d42e9adaeda1cf2.css": "73eef4ad324e2cebfdf7bf7a21826ac130776e74"
   },
   "navigationUrls": [
     {

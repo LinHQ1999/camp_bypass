@@ -41,11 +41,11 @@
       </div>
       <div class="item">
         <div class="k">请假原因：</div>
-        <div class="v">{{leaveReason}}</div>
+        <div class="v">{{student.reason}}</div>
       </div>
       <div class="item">
         <div class="k">发起位置：</div>
-        <div class="v"><span style="margin-left: 0">湖北文理学院</span></div>
+        <div class="v"><span style="margin-left: 0">{{student.from}}</span></div>
       </div>
       <div class="item">
         <div class="k">抄送人：</div>
@@ -53,7 +53,7 @@
       </div>
       <div class="item">
         <div class="k">目的地：</div>
-        <div class="v">609科创实训院</div>
+        <div class="v">{{student.destination}}</div>
       </div>
     </div>
     <div class="rt">
@@ -74,13 +74,13 @@
       </li>
       <li class="v" id="s2">
         <div class="circle">
-        </div>一级：{{student.teacher}} - 审批<span style="font-weight:100;color: #30d583;font-weight: bold;">通过</span>
+        </div>一级：{{student.teacher1}} - 审批<span style="font-weight:100;color: #30d583;font-weight: bold;">通过</span>
         <div class="v">{{startDate|date:"MM-dd HH:mm"}}</div>
       </li>
       <div id="message">审批意见：无</div>
       <li class="v" id="s3">
         <div class="circle">
-        </div>二级：李小华 - 审批<span style="font-weight:100;color: #30d583;font-weight: bold;">通过</span>
+        </div>二级：{{student.teacher2}} - 审批<span style="font-weight:100;color: #30d583;font-weight: bold;">通过</span>
         <div class="v">{{startDate|date:"MM-dd HH:mm"}}</div>
       </li>
       <div id="message">审批意见：无</div>

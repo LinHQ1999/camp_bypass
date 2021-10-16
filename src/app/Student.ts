@@ -6,8 +6,12 @@ export interface Student {
 
   // 离校部分
   phone: string;
-  // 随机选取一个理由
-  reasons: string[];
   // 审批人
-  teacher: string;
+  teacher1: string;
+  teacher2: string;
+
+  from:string;
+  destination:string;
+
+  reason: string;
 }

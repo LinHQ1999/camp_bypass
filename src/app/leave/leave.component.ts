@@ -15,16 +15,13 @@ export class LeaveComponent implements OnInit {
   endDate: Date = new Date();
   currentDate: Date = new Date();
 
-  leaveReason: string | undefined;
-
-constructor(
-    private studata:StudataService,
-    private route:ActivatedRoute
-    ) { }
+  constructor(
+    private studata: StudataService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
     this.getStudents();
-    this.getReason();
 
     // 计算截止日期，自动以 1 天计。
     // 起始时间进行混淆。
@@ -38,15 +35,6 @@ constructor(
 
   getStudents(): void {
     this.student = this.studata.Current;
-  }
-
-  getReason(): void {
-    if (this.student?.reasons !== undefined) {
-      const randIndex = Math.floor(Math.random() * this.student?.reasons.length)
-      this.leaveReason = this.student.reasons[randIndex];
-    } else {
-      this.leaveReason = "帮忙拿东西";
-    }
   }
 }
 
