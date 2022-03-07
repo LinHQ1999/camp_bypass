@@ -1,5 +1,27 @@
 [
 	{
+		"name": "刘幸龙",
+		"sno": "2018117065",
+		"simple": false,
+		"phone": "13671346288",
+		"teacher1": "李晓华",
+		"teacher2": "毛小娟",
+		"reason": "外出实习",
+		"from": "湖北文理学院",
+		"destination": "609 思创实训院"
+	},
+	{
+		"name": "王刚",
+		"sno": "2018117121",
+		"simple": false,
+		"phone": "13971346288",
+		"teacher1": "童晓芳",
+		"teacher2": "李晓华",
+		"reason": "去市区买东西",
+		"from": "湖北文理学院",
+		"destination": "609 思创实训院"
+	},
+	{
 		"name": "陈心缘",
 		"sno": "2019117065",
 		"simple": false,
