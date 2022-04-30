@@ -1,0 +1,9 @@
+<div id="modal">
+    <div class="modal">
+        <span class="title">{{title}}</span>
+        <img (click)="handleClose()" src="assets/info_close.png"/>
+        <div id="mcontent">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>

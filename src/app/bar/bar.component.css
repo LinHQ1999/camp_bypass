@@ -39,6 +39,7 @@
     color: white;
     align-self: flex-end;
     font-size: smaller;
+    text-decoration: none;
 }
 
 #bar {
@@ -81,4 +82,24 @@
 .ico {
   vertical-align: middle;
   margin-right: 1vw;
+}
+
+.inner {
+    font-weight: bold;
+    font-size: .95em;
+    transform: translateX(-8px);
+    padding: .5em inherit;
+}
+
+.inner li {
+    margin: .25em 0;
+}
+
+.inner li::marker{
+    font-size: .5em;
+}
+
+.inner span {
+    display: inline-block;
+    min-width: 3em;
 }

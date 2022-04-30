@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,7 @@ import { BarComponent } from './bar/bar.component';
 import { CustomizerComponent } from './customizer/customizer.component';
 import { LeaveComponent } from './leave/leave.component';
 import { LeaveshellComponent } from './leaveshell/leaveshell.component';
+import { ModalComponent } from './modal/modal.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { NavComponent } from './shell/nav/nav.component';
 import { TitlebarComponent } from './shell/titlebar/titlebar.component';
@@ -27,7 +29,8 @@ import { ShowComponent } from './show/show.component';
     QrcodeComponent,
     BarComponent,
     TitlebarComponent,
-    NavComponent
+    NavComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { ShowComponent } from './show/show.component';
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: PathLocationStrategy }

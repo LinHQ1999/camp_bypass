@@ -17,7 +17,6 @@ export class LeaveComponent implements OnInit {
 
   constructor(
     private studata: StudataService,
-    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {

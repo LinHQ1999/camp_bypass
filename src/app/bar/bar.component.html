@@ -1,9 +1,22 @@
+<app-modal [@showInfo] *ngIf="showInfo=='show' && student" (close)="toggleInfo('hide')" [title]="title" [show]="false">
+  <ul class="inner">
+    <li><span>照片:</span>-</li>
+    <li><span>姓名:</span>{{student.name}}</li>
+    <li><span>学号:</span>{{student.sno}}</li>
+    <li><span>性别:</span>男</li>
+    <li><span>年级:</span>2018</li>
+    <li><span>学院:</span>计算机工程学院</li>
+    <li><span>专业:</span>计算机科学与技术</li>
+    <li><span>班级:</span>1811</li>
+    <li><span>宿舍:</span>-</li>
+  </ul>
+</app-modal>
 <div id="status">
   <div id="checked">
     <img class="ico" src="assets/ok3.png" alt="">
     <span>审批已通过</span>
   </div>
-  <div id="append">个人信息></div>
+  <a (click)="toggleInfo('show')" id="append">个人信息></a>
   <p id="state">正在休假中</p>
 </div>
 <div id="bar">
